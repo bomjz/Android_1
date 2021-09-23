@@ -1,18 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/hello"
+        android:textColor="#188026"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:paddingTop="30sp"
+        android:hint="@string/edit_text"
+        android:textColor="#576FE8"
+        android:textSize="24sp"
+        android:ems="10"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/text_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="end"
+        android:text="@string/button"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        app:backgroundTint="#02020B" />
+
+    <Switch
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/switch_off"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:ellipsize="middle"
+        android:layout_marginTop="25dp"
+        android:showText="true"
+        android:textColorLink="#3BC531"
+        android:textOff="@string/switch_off"
+        android:textOn="@string/switch_on"
+        android:textSize="36sp"
+        android:visibility="visible"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/box"
+        android:textColor="#AC14A9"
+        android:textCursorDrawable="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:visibility="visible" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:checked="true"
+        android:textOff="@string/toggle_off"
+        android:textOn="@string/toggle_on"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+</LinearLayout>
