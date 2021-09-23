@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">New Platform</string>
+    <string name="app_name">Знакомство с Android</string>
+    <string name="hello">Привет!</string>
+    <string name="edit_text">Введите текст</string>
+    <string name="button">Кнопка</string>
+    <string name="switch1">Ползунок</string>
+    <string name="box">Чек-бокс</string>
+    <string name="toggle_on">Включено</string>
+    <string name="toggle_off">Выключено</string>
+    <string name="switch_on">On</string>
+    <string name="switch_off">Off</string>
+
+    <string name="ed_text">Введите текст</string>
+    <string name="ed_textPerName">Ваше имя</string>
+    <string name="ed_phone">Телефон</string>
+    <string name="ed_number">Номер личного дела</string>
+    <string name="ed_textPass">Пароль</string>
+    <string name="ed_textEmail">Email</string>
+    <string name="ed_text_uri">Ссылка</string>
+    <string name="ed_date">Дата: дд/мм/гг</string>
 </resources>
